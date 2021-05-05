@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
+<script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+
+<link rel="stylesheet" href="customer_breakdown.css">
+<link rel="shortcut icon" type="image/png" href="/406Amunition_SalesAnalysis/resources/406_logo.png"/>
+
+
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+  <div>
+    <title>406 Ammunition Marketing Analysis: Customer Breakdown</title>
+  </div>
+</head>
+
+<!-- Nav Bar -->
+<ul>
+  <li><a href="/406Amunition_SalesAnalysis/">Sales Analysis</a></li>
+  <li><a class="active" href="/406Amunition_SalesAnalysis/customer_breakdown/">Customer Breakdown</a></li>
+</ul>
+
+<!-- Body -->
+<body class="main_body">
+  <div class="card">
+    <!-- Header 1-->
+    <h1 class = "main_title">Customer Breakdown Analysis</h1>
+    <!-- Body -->
+    <!-- Body <body>-->
+    <main>
+      <div class="body_p">
+        To better understand 406 Ammunition’s customer base, it is important to analyze the distribution of revenue and transactions based on the customer type. Below, are visuals that depict the distribution of both the number of transactions and revenue per month, separated by customer type. Pay attention to the relationship between the share of transactions and the returned revenue share for each customer type.
+      </div>
+
+    <!-- #######################
+    ## Transaction Line Chart ## 
+    ############################ -->
+
+    <h3>Monthly Transactions by Customer Type</h3>
+      <div id="container" class="svg-container"></div>
+
+      <div class="body_p">
+        The majority of monthly transactions seems to oscillate between businesses and individual customers. This can be accounted for a variety of reasons, one such being the main business partners could have an ordering process that increases orders during the summer months to keep on-hand inventory low but maintains a level of supply to support their customer’s demand. 
+      </div>
+
+      <!-- ###################
+    ## Revenue Line Chart ## 
+    ######################## -->
+
+    <h3>Monthly Revenue by Customer Type</h3>
+      <div id="container2" class="svg-container2"></div>
+
+      <section>
+        <div id="choropleth_viz"></div>
+      </section>
+
+      <div class="body_p">
+        Businesses have unequivocally accounted for most of the revenue for the entire year of 2020, regardless of the number or share of transactions that they accounted for. This means that the demand from businesses is relatively constant in regard to individual consumers. 
+        <br>
+        <br>
+        It seems like the number of customers is increasing every month; however, it is from an increase of individual customers. This can be assumed that as chain ammunition stores are depleted of their ammunition, individuals seek out 406 Ammunition to obtain ammunition, these purchases are smaller and more frequent than those of business customers. Take for example April of 2020, individual’s transactions accounted for 91% of the month’s transactions, however it only accounted for 29% of the month’s revenue, thus leaving the 7% of business transaction accounting for 68% of the month’s revenue. This offset distribution of a small amount of business transaction accounting for most of the revenue mirrors the pareto principle. The pareto principle (<a href="https://corporatefinanceinstitute.com/resources/knowledge/economics/pareto-distribution/">resource</a>) is the naturally occurring distribution that roughly 20% of the inputs account for 80% of the outputs. 
+        <br>
+        <br>
+        <img src="/406Amunition_SalesAnalysis/resources/pareto_principle.jpeg" alt="Pareto Principle" width="600" height="400" class="center-image">
+        <br>
+        <br>
+        406 Ammunition’s revenue generation from individual and business customers follows the pareto principle very closely. This means that the ~20% of customers that generate ~80% of the revenue should be prioritized over the other ~80% of customers that only generate ~20% of the revenue. Business partners should be given the focus when marketing or sales strategies are developed. In the book World Class Manufacturing (WCM), the ideal supplier is determined as a company who ‘partners’ with their customer to continuously improve their product and design, sharing in the profits of the business. In WCM it also defines how to develop suppliers – 
+        <br>
+        <h4>
+          “Supplier development means making the supplier ‘like family.’ It is not worth the effort and cost unless there is a clear intent to stay with the supplier for the long haul.” 
+        </h4>
+        <br>
+        The overall action that 406 Ammunition should make is to develop long-term relationships with their business partners to optimize revenue and growth, to do this follow WCM’s outline for a supplier partner and become that type of supplier to your business partners. By creating this ‘like family’ relationship with your customers, it will allow you to be invested in your partner’s operations and strategy and they will likewise be invested into 406’s business as well. This opportunity could pay dividends in the future if executed properly. 
+      </div>
+
+  </div>
+<!-- Body </body>-->
+</body>
+
+<!-- JS file -->
+<script src="customer_breakdown.js"></script>
+
+</html>

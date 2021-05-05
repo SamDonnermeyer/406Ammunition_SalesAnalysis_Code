@@ -1,0 +1,174 @@
+/* ##########################################
+################# Headers ###################
+############################################# */
+h1 {
+    font-family: "Georgia";
+    text-align: center;
+}
+
+body {
+    background-color: #eee;
+}
+
+h3 {
+    color: #3F4048;
+}
+
+
+h4 {
+    color: #3F4048;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Main Texts */
+.main_title {
+    text-align: center;
+    margin-top: 25px;
+    text-decoration: underline;
+    color: #3F4048;
+}
+
+.main_body {
+    padding: 10px;
+    margin: 5px 5px 5px;
+    text-align: center;
+}
+
+.body_p {
+    margin: 10px 100px;
+    text-align: left;
+    color: #626268;
+}
+
+.foot_note {
+    margin: 10px 100px;
+    text-align: left;
+    color: #626268;
+}
+
+/* Page Elements */
+.card {
+    background-color: white;
+    margin: 20px auto;
+    padding: 10px;
+    width: 1000px;
+    height: 2150px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.32), 0 3px 12px 0 rgba(0, 0, 0, 0.24);
+}
+
+rect {
+    stroke-width: .5;
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ###########################################
+################# Navigation Bar #############
+############################################## */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    height: 44px;
+    overflow: auto;
+    font-size: 24px;
+  }
+
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li a.active {
+    background-color: #484D6D;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #A9A9A9;
+    color: white;
+  }
+
+/* ######################
+####### Tooltip #########
+######################### */
+
+/* Style for Custom Tooltip */
+div.tooltip {   
+    position: absolute;           
+   text-align: center;           
+   width: 150px;                  
+   height: 42px;                 
+   padding: 2px;             
+   font: 12px sans-serif;  
+    color: #EFE9F4;
+   background: #484D6D;   
+ outline: black;
+ outline-width: 2px;
+   border: 0px;     
+ border-color: black; 
+   border-radius: 5px;           
+   pointer-events: none;        
+}
+
+/* ##########################################
+################# Graph Styles ##############
+############################################# */
+path#business {
+    stroke: #484D6D;
+}
+
+path#individual {
+    stroke: #A9A9A9;
+}
+
+path#walk-in {
+    stroke: #08B2E3;
+}
+
+.bubbles#business {
+    fill: #484D6D;
+    stroke-width: 2px;
+    stroke: white;
+}
+
+.bubbles#business:hover {
+    stroke-width: 2px;
+    stroke: black;
+}
+
+.bubbles#individual {
+    fill: #A9A9A9;
+    stroke-width: 2px;
+    stroke: white;
+}
+
+.bubbles#individual:hover {
+    stroke-width: 2px;
+    stroke: black;
+}
+
+.bubbles#walk-in {
+    fill: #08B2E3;
+    stroke-width: 2px;
+    stroke: white;
+}
+
+.bubbles#walk-in:hover {
+    stroke-width: 2px;
+    stroke: black;
+}
